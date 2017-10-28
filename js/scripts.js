@@ -7,6 +7,7 @@ var d = 0;
 //UI logic//
 $(document).ready(function() {
   $("#Quiz").submit(function (event) {
+    debugger;
     var climate = $("input:radio[name=climate]:checked").val();
     var intensity = $("input:radio[name=intensity]:checked").val();
     var amenities = $("input:radio[name=amenities]:checked").val();
@@ -35,55 +36,58 @@ $(document).ready(function() {
     //end of question 2//
     if (amenities === "a"){
       a += 1;
-    } if (amenities === "b"){
+    } else if (amenities === "b"){
       b += 1;
-    } if (amenities === "c"){
+    } else if (amenities === "c"){
       c += 1;
-    } if (amenities === "d"){
+    } else if (amenities === "d"){
       d += 1;
     }
     //end of question 3//
     if (meal === "a"){
       a += 1;
-    } if (meal === "b"){
+    } else if (meal === "b"){
       b += 1;
-    } if (meal === "c"){
+    } else if (meal === "c"){
       c += 1;
-    } if (meal === "d"){
+    } else if (meal === "d"){
       d += 1;
     }
     //end of question 4//
     if (perfect === "a"){
       a += 1;
-    } if (perfect === "b"){
+    } else if (perfect === "b"){
       b += 1;
-    } if (perfect === "c"){
+    } else if (perfect === "c"){
       c += 1;
-    } if (perfect === "d"){
+    } else if (perfect === "d"){
       d += 1;
     }
     //end of question 5//
-    if (a > b && c && d) {
+    if (a>b && a>c && a>d) {
     $("#vegas").show();
     $("#vancouver").hide();
     $("#costarica").hide();
     $("#finland").hide();
-    } else if (b > a && c && d) {
+    }
+    else if (b>a && b>c && b>d) {
     $("#vegas").hide();
     $("#vancouver").show();
     $("#costarica").hide();
     $("#finland").hide();
-    } else if (c > a && b && d) {
+    }
+    else if (c>a && c>b && c>d) {
     $("#vegas").hide();
     $("#vancouver").hide();
     $("#costarica").show();
     $("#finland").hide();
     }
-    else if (d > a && b && c) {
+    else if (d>a && d>b && d>c) {
     $("#vegas").hide();
     $("#vancouver").hide();
     $("#costarica").hide();
     $("#finland").show();
     };
+    event.preventDefault();
   });
 });
