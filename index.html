@@ -5,165 +5,170 @@
    <link href="css/styles.css" rel="stylesheet" type="text/css">
    <script src="js/jquery-3.2.1.js"></script>
    <script src="js/scripts.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <title>Vacation Quiz</title>
   </head>
   <body>
-    <h1>Find Your Dream Vacation</h1>
-    <p>Do you catch yourself daydreaming about your next vacation? Fill out this short questionaire to find your ideal getaway location</p>
+    <div class="containerHeader">
+      <h1 id="h1head" class="display-2">Find Your Dream Vacation</h1>
+      <h3 id="h3head"><strong>Do you catch yourself daydreaming about your next vacation? <br>Fill out this short questionaire to find your ideal getaway location</strong> </h3>
+      <img src="https://burst.shopifycdn.com/photos/palm-trees-sky_4460x4460.jpg">
+    </div>
     <div class="container">
       <form id="Quiz">
-        <div class="radio">
-          <h2>What's your favorite climate</h2>
-          <label>
-            <input type="radio" name="climate" value="a" checked>
-            Hot &amp; Dry
-          </label>
+        <div class="panel panel-primary">
+          <div class="radio">
+            <div class="panel-heading">
+            <h2>What's your favorite climate?</h2>
+            </div>
+            <div class="panel-body">
+            <label class="firstOption">
+              <input type="radio" name="climate" value="a" checked>
+              Hot &amp; Dry
+            </label>
+            </div>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="climate" value="b">
+              Temperate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="climate" value="c">
+              Tropical
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="climate" value="d">
+              Winter Wonderland
+            </label>
+          </div> <!-- end of first question -->
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="climate" value="b">
-            Temperate
-          </label>
+          <div class="radio">
+            <h2>What's your ideal intensity level?</h2>
+            <label class="firstOption">
+              <input type="radio" name="intensity" value="a" checked>
+              Laying down for a healthy portion of the day
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="intensity" value="b">
+              Light walking and shopping
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="intensity" value="c">
+              Hiking
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="intensity" value="d">
+              Xtreme climbing
+            </label>
+          </div> <!--End of Question 2-->
+          <div class="radio">
+            <h2>What are your required amenities?</h2>
+            <label class="firstOption">
+              <input type="radio" name="amenities" value="a" checked>
+              Resort with full spa.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="amenities" value="b">
+              Air B&amp;B Apartment
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="amenities" value="c">
+              Hostel
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="amenities" value="d">
+              A tent is just fine
+            </label>
+          </div> <!--End of Question 3-->
+          <div class="radio">
+            <h2>What's your favorite type of meal?</h2>
+            <label class="firstOption">
+              <input type="radio" name="meal" value="a" checked>
+              Steak
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="meal" value="b">
+              Seared Salmon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="meal" value="c">
+              Pineapple
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="meal" value="d">
+              Whatever you can trap and kill
+            </label>
+          </div> <!--End of Question 4-->
+          <div class="radio">
+            <h2>Which answer best describes your perfect day?</h2>
+            <label class="firstOption">
+              <input type="radio" name="perfect" value="a" checked>
+              Laying by the pool with a stiff cocktail
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="perfect" value="b">
+              Fine dining &amp; an art exhibit
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="perfect" value="c">
+              swimming, boat rides and hang gliding
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="perfect" value="d">
+              Life or death survival scenario
+            </label>
+            <button type="submit" class="btn btn-success" id="click">Answer!</button>
+          </div> <!--End of Question 5-->
+        <div id="vegas">
+          <h1>Endless sun, luxury resorts, what's better?</h1>
+          <img src="https://greenvalleyranch.sclv.com/~/media/Images/Page-Background-Images/GVR/Hotel/GV_Hotel_Exterior4Pool-2012.jpg?h=630&la=en&w=1080" alt="Las Vegas Resort">
+          <h3>Your dream vacation would be a long week in Vegas!</h3>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="climate" value="c">
-            Tropical
-          </label>
+        <div id="vancouver">
+          <h1>International culture, windbreaker weather. That's so you.</h1>
+          <img src="http://www.linquistappraisals.com/wp-content/uploads/2016/11/Vancouver_City.jpg" alt="Vancouver Skyline">
+          <h3>You need a week away in Vancouver, BC!</h3>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="climate" value="d">
-            Winter Wonderland
-          </label>
-        </div> <!-- end of first question -->
-        <div class="radio">
-          <h2>What's your ideal intensity level?</h2>
-          <label>
-            <input type="radio" name="intensity" value="a" checked>
-            Laying down for a healthy portion of the day
-          </label>
+        <div id="costarica">
+          <h1>Rainforest, beaches, mountains. This is where you belong.</h1>
+          <img src="http://www.cheapflightslab.com/wp-content/uploads/2017/06/costa-rica-ms3.jpg" alt="Costa Rica">
+          <h3>You'll love everything Costa Rica has to offer!</h3>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="intensity" value="b">
-            Light walking and shopping
-          </label>
+        <div id="finland">
+          <h1>Sparse population, grueling winters. Challenge yourself in Finland.</h1>
+          <img src="http://static1.visitfinland.com/fcb/wp-content/uploads/sites/6/2012/11/Revontuli-930x400-930x400.jpg" alt="Northern Lights in Finland">
+          <h3> You're as wild as the Scandanavian wilderness. Get a one-way ticket to Finland because who knows if you'll make it out alive. </h3>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="intensity" value="c">
-            Hiking
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="intensity" value="d">
-            Xtreme climbing
-          </label>
-        </div> <!--End of Question 2-->
-        <div class="radio">
-          <h2>What are your required amenities?</h2>
-          <label>
-            <input type="radio" name="amenities" value="a" checked>
-            Resort with full spa.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="amenities" value="b">
-            Air B&amp;B Apartment
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="amenities" value="c">
-            Hostel
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="amenities" value="d">
-            A tent is just fine
-          </label>
-        </div> <!--End of Question 3-->
-        <div class="radio">
-          <h2>What's your favorite type of meal?</h2>
-          <label>
-            <input type="radio" name="meal" value="a" checked>
-            steak
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="meal" value="b">
-            Seared Salmon
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="meal" value="c">
-            Pineapple
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="meal" value="d">
-            Whatever you can trap and kill
-          </label>
-        </div> <!--End of Question 4-->
-        <div class="radio">
-          <h2>Which answer best describes your perfect day?</h2>
-          <label>
-            <input type="radio" name="perfect" value="a" checked>
-            Laying by the pool with a stiff cocktail
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="perfect" value="b">
-            Fine dining &amp; an art exhibit
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="perfect" value="c">
-            swimming, boat rides and hang gliding
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="perfect" value="d">
-            Life or death survival scenario
-          </label>
-        </div> <!--End of Question 5-->
-        <button type="submit" class="btn btn-success">Answer!</button>
-      </div>
-      <div id="vegas">
-        <h1>Endless sun, luxury resorts, what's better?</h1>
-        <img src="https://greenvalleyranch.sclv.com/~/media/Images/Page-Background-Images/GVR/Hotel/GV_Hotel_Exterior4Pool-2012.jpg?h=630&la=en&w=1080" alt="Las Vegas Resort">
-        <br>
-        <br>
-        <h3>Your dream vacation would be a long week in vegas</h3>
-      </div>
-      <div id="vancouver">
-        <h1>International culture, windbreaker weather. That's so you.</h1>
-        <img src="http://www.linquistappraisals.com/wp-content/uploads/2016/11/Vancouver_City.jpg" alt="Vancouver Skyline">
-        <br>
-        <h3>You need a week away in Vancouver, BC</h3>
-      </div>
-      <div id="costarica">
-        <h1>Rainforest, beaches, mountains. This is where you belong.</h1>
-        <img src="http://www.cheapflightslab.com/wp-content/uploads/2017/06/costa-rica-ms3.jpg" alt="Costa Rica">
-        <br>
-        <h3>You'll love everything Costa Rica has to offer!</h3>
-      </div>
-      <div id="finland">
-        <h1>Sparse population, grueling winters. Challenge yourself in Finland.</h1>
-        <img src="http://static1.visitfinland.com/fcb/wp-content/uploads/sites/6/2012/11/Revontuli-930x400-930x400.jpg" alt="Northern Lights in Finland">
-        <br>
-        <h3> You're as wild as the Scandanavian wilderness. Get a one-way ticket to Finland because who knows if you'll make it out alive. </h3>
-      </div>
-    </form>
+      </form>
+    </div>
   </body>
 </html>

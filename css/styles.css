@@ -1,16 +1,127 @@
+body {
+  background-color: #e3f2fc;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #04a777;
+  box-shadow: 4px 4px 4px;
+}
+
+h3 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+label {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.btn:hover {
+box-shadow: 0px 0px 20px 10px rgba(0, 255, 0, 0.67);
+}
+
+.radio {
+  width: 500px;
+  margin:auto;
+  padding-top: 5px;
+}
+
+.firstOption {
+  padding-top: 10px;
+}
+
+.containerHeader {
+  position: relative;
+  overflow: hidden;
+}
+
+.containerHeader h1 {
+  padding: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.containerHeader h3 {
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.containerHeader img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+#h1head {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #edde5a;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#h3head {
+  display: block;
+  margin: auto;
+  text-align: center;
+   font-family: 'Raleway', sans-serif;
+   text-shadow: 2px 2px 4px #000000;
+   line-height: 180%;
+}
+
+
 #vegas {
   display: none;
-  margin: 100px;
+  margin: 0 auto;
 }
 #vancouver {
   display: none;
-  margin: 100px;
+  margin: 0 auto;
 }
 #costarica {
   display: none;
-  margin: 100px;
+  margin: 0 auto;
 }
 #finland {
   display: none;
-  margin: 100px;
+  margin: 0 auto;
 }

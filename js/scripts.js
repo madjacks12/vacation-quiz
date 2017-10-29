@@ -7,7 +7,7 @@ var d = 0;
 //UI logic//
 $(document).ready(function() {
   $("#Quiz").submit(function (event) {
-    debugger;
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
     var climate = $("input:radio[name=climate]:checked").val();
     var intensity = $("input:radio[name=intensity]:checked").val();
     var amenities = $("input:radio[name=amenities]:checked").val();
